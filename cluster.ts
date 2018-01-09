@@ -1,6 +1,10 @@
 import * as cluster from 'cluster';
 import * as  http from 'http';
 
+cluster.setupMaster({
+    execArgv: ['-r', 'tsconfig-paths/register', '-r', 'ts-node/register']
+} as cluster.ClusterSettings)
+
 if (cluster.isMaster) {
   console.log(`Master ${process.pid} is running`);
 
