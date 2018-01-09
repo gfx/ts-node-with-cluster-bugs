@@ -1,3 +1,7 @@
+UPDATE: [setupMaster](https://nodejs.org/api/cluster.html#cluster_cluster_setupmaster_settings) is available to give arguments to sub-processes https://github.com/gfx/ts-node-with-cluster-bugs/pull/1
+
+
+
 As of ts-node v3.0.6, the following command crashes:
 
 ```console
